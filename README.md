@@ -1,2 +1,13 @@
 # hexo-renderer-adarender
-adarender for hexo
+
+markdown-it & adarender plugin for hexo.
+
+### Installation
+
+``` bash
+npm un hexo-renderer-marked --save
+```
+
+``` bash
+npm i hexo-renderer-adarender --save
+```
