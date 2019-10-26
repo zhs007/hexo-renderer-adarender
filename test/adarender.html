@@ -52,4 +52,13 @@ var adadata_testdata = {
   };
 
   chart_pie001.setOption(option);
-</script>
+</script><pre class="hljs"><code><span class="hljs-comment">/**
+ * findByID
+ * @param {object} obj - webdriverio element or client
+ * @param {string} id - id
+ */</span>
+<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findByID</span>(<span class="hljs-params">obj, id</span>) </span>{
+  <span class="hljs-keyword">const</span> selector = <span class="hljs-string">'new UiSelector().resourceId("'</span> + id + <span class="hljs-string">'")'</span>;
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> obj.$$(<span class="hljs-string">`android=<span class="hljs-subst">${selector}</span>`</span>);
+}
+</code></pre>

@@ -1,4 +1,3 @@
-
 ```ada.dataset
 name: testdata
 data:
@@ -17,4 +16,16 @@ subtext: this is a test pie
 a: pie namevis
 bval: namedata
 cval: valdata
+```
+
+```js
+/**
+ * findByID
+ * @param {object} obj - webdriverio element or client
+ * @param {string} id - id
+ */
+async function findByID(obj, id) {
+  const selector = 'new UiSelector().resourceId("' + id + '")';
+  return await obj.$$(`android=${selector}`);
+}
 ```
