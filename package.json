@@ -1,10 +1,10 @@
 {
   "name": "hexo-renderer-adarender",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Ada render for hexo",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "adarender": "^0.3.3",
+    "highlight.js": "^9.15.10",
     "markdown-it": "^10.0.0",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-cjk-breaks": "^1.1.3",
