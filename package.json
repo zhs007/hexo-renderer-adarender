@@ -1,6 +1,6 @@
 {
   "name": "hexo-renderer-adarender",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Ada render for hexo",
   "main": "index.js",
   "scripts": {
