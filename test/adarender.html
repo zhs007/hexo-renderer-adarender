@@ -4,23 +4,15 @@ var adadata_testdata = {
   valdata: [5,4,3,2,1],
   multivaldata: [[5,4,3,2,1],[6,5,4,3,2],[7,6,5,4,3],[8,7,6,5,4],[9,8,7,6,5],[10,9,8,7,6]],
 };
-</script><div id="pie001" style="width: 1280px;height: 800px;margin-left:-50px;max-width:1000px;"></div>
+</script><div style="width:100%;text-align:center;">
+  <div id="pie001" style="width:92%;height:0;padding-bottom:69%;margin:auto;"></div>
+  <p>Pie - this is a test pie</p>
+  <p></p>
+</div>
 <script type="text/javascript">
-  var chart_pie001 = echarts.init(document.getElementById('pie001'));
-
-  var piedata_pie001 = [];
-  for (let i = 0; i < adadata_testdata.namedata.length; ++i) {
-    piedata_pie001.push({
-      name: adadata_testdata.namedata[i],
-      value: adadata_testdata.valdata[i],
-    });
-  }
+  var piedata_pie001 = adarender.buildPieData(adadata_testdata, 'namedata', 'valdata');
 
   var option = {
-    title: {
-      text: 'Pie',
-      subtext: 'this is a test pie',
-    },
     tooltip: {
       trigger: 'item',
       formatter: "{a} <br/>{b} : {c} ({d}%)"
@@ -51,7 +43,7 @@ var adadata_testdata = {
     ]
   };
 
-  chart_pie001.setOption(option);
+  var chart_pie001 = adarender.initChart(document.getElementById('pie001'), option);
 </script><pre class="hljs"><code><span class="hljs-comment">/**
  * findByID
  * @param {object} obj - webdriverio element or client

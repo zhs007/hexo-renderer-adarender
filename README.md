@@ -21,7 +21,11 @@ You need add this code into head.
 />
 <script
   type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.min.js"
+  src="https://cdn.jsdelivr.net/npm/echarts@4.4.0/dist/echarts.min.js"
+></script>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/adarender@0.3.21/dist/adarender.js"
 ></script>
 ```
 
