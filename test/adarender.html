@@ -10,7 +10,7 @@ var adadata_testdata = {
   <p></p>
 </div>
 <script type="text/javascript">
-  var piedata_pie001 = adarender.buildPieData(adadata_testdata, 'namedata', 'valdata');
+  var pdret_pie001 = adarender.buildAllPieData(adadata_testdata, 'namedata', 'valdata', '');
 
   var option = {
     tooltip: {
@@ -23,7 +23,7 @@ var adadata_testdata = {
       right: 10,
       top: 20,
       bottom: 20,
-      data: adadata_testdata.namedata,
+      data: pdret_pie001.ds.namedata,
     },
     series: [
       {
@@ -31,7 +31,7 @@ var adadata_testdata = {
         type: 'pie',
         radius: '55%',
         center: ['40%', '50%'],
-        data: piedata_pie001,
+        data: pdret_pie001.piedata,
         itemStyle: {
           emphasis: {
             shadowBlur: 10,
@@ -46,8 +46,8 @@ var adadata_testdata = {
   var chart_pie001 = adarender.initChart(document.getElementById('pie001'), option);
 </script><pre class="hljs"><code><span class="hljs-comment">/**
  * findByID
- * @param {object} obj - webdriverio element or client
- * @param {string} id - id
+ * <span class="hljs-doctag">@param <span class="hljs-type">{object}</span> <span class="hljs-variable">obj</span></span> - webdriverio element or client
+ * <span class="hljs-doctag">@param <span class="hljs-type">{string}</span> <span class="hljs-variable">id</span></span> - id
  */</span>
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">findByID</span>(<span class="hljs-params">obj, id</span>) </span>{
   <span class="hljs-keyword">const</span> selector = <span class="hljs-string">'new UiSelector().resourceId("'</span> + id + <span class="hljs-string">'")'</span>;
