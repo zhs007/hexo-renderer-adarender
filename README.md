@@ -17,15 +17,15 @@ You need add this code into head.
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/highlight.js/9.1.0/styles/github.min.css"
+  href="https://cdn.jsdelivr.net/highlight.js/9.17.1/styles/github.min.css"
 />
 <script
   type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/echarts@4.4.0/dist/echarts.min.js"
+  src="https://cdn.jsdelivr.net/npm/echarts@4.5.0/dist/echarts.min.js"
 ></script>
 <script
   type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/adarender@0.3.21/dist/adarender.js"
+  src="https://cdn.jsdelivr.net/npm/adarender@0.5.2/dist/adarender.js"
 ></script>
 ```
 
